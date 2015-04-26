@@ -56,3 +56,7 @@ There are two problems that come and go.
 1. When the program is exited, the entries are reprinted onto DiaryStorage, and sometimes a random space is added to the front of the beginning of the entry, this kills the program and requires a manual fix. Either fixing it to be able to remove any starting space, or finding where that space comes from would solve the issue.
 
 2. Sometimes when the program is exited, entries are printed into storage twice. I do not know what causes this.  
+
+Possible Improvements:
+
+Right now the word splitting function is rather rudemntary, only splitting around ? ! , . and on spaces. It also can't detect writing errors. Anything to make this a more robust function would be quite the improvement.
