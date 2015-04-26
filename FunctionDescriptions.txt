@@ -1,0 +1,46 @@
+Insert Entry is where the Date, and Diary Entry proper are sent after being seperated.  It creates a new entry with the data,
+and sends the entry data to be split and seperated by word, so they can be searched.
+
+void insertEntry(std::string in_title, std::string date);
+
+Add Date is a sub-function of Insert Entry, it takes the date and seperates it into integers for Day/Month/Year and returns to partially
+made entry struct to the Insert Entry function to complete, with the entry itself
+
+entry* addDate(std::string date);
+
+Add Words is another sub-function of Insert Entry, it takes the content of the entry and the address of the entry struct. It takes the
+content and splits it into individual words. Then adds these to our library of words, and stores this occurrence of that word along with it.
+
+void addWords(std::string content, entry *dateplace);
+
+Insert Word is a sub-function of Add Words, it takes the individual word and either creates a new place in our Binary Search Tree if
+the word has never occurred before, or adds the new occurrence of it to the preexisting struct in our BST if its been said before
+
+void insertWord(std::string word1, entry *dateplace);
+
+Linear allows you to linearly search/look through your entries, which are saved as a linked list. YOu can go backwards and forwards
+through the diary to look at any entry individually.
+
+void linear();
+
+Print Words prints every unique word, and how many occurrences there are of each.
+
+void printWords();
+
+Print Word is the sub-function of PrintWords that is called recursively down the Binary Search Tree. Taking, originally, the tree start
+and then calling it left and right down each, only being called from Print Words once.
+
+void printWord(word *word);
+
+New Entry is how the user actually types in a new entry, it asks for the date, and the entry itself and then sends the data to insertEntry
+
+void newEntry();
+
+Search Words allows the user to search for a word in the Binary Search Tree to see every occurrence of that word. It prints them all.
+
+void searchWords(std::string word2);
+
+Print Out is the function called when the user quits that saves all the data, both old, and new to the DiaryStorage.txt file. This includes
+the password so it doesn't need to be set.
+
+void printOut();
