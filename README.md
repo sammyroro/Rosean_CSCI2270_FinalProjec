@@ -33,7 +33,7 @@ Alternate Methods:
 
 There are four files actually used by the program. main.cpp (The Main), Diary.cpp and Diary.h (The Graph/Stucts/Functions), and DiaryStorage.txt (The home of the diary data).
 
-To use, just create an empty project using Codeblocks, and add the main.cpp, Diary.cpp, and Diary.h files in. Then put the DiaryStorage on the Desktop and you're set, since DiaryStorage is defaulty set up to call it as an adress on the desktop. 
+To use, just create an empty project using Codeblocks, and add the main.cpp, Diary.cpp, and Diary.h files in. Then put the DiaryStorage on the Desktop and change all appereances of "DiaryStorage.txt" to "/user/Desktop/DiaryStorage.txt" or whatever your computer type uses as adress and you're set.
 
 Alternativly you can use DiaryStorage as a command line argument, the ability to do so is just commented out in main.cpp. Find the five blue lines and un-comment them. Then comment out whats inbetween the blue lines (Just three lines, all marked "Whats Inbetween"). Then, it should run with DiaryStorage.txt as the first command line argument.
 
