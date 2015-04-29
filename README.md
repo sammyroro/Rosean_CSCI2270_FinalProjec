@@ -35,7 +35,7 @@ There are four files actually used by the program. main.cpp (The Main), Diary.cp
 
 To use, just create an empty project using Codeblocks, and add the main.cpp, Diary.cpp, and Diary.h files in. Then put the DiaryStorage on the Desktop and you're set, since DiaryStorage is defaulty set up to call it as an adress on the desktop. 
 
-Alternativly you can use DiaryStorage as a command line argument, the ability to do so is just commented out in FinalProject.cpp. Find the five blue lines and un-comment them. Then comment out whats inbetween the blue lines (Just three lines, all marked "Whats Inbetween"). Then, it should run with DiaryStorage.txt as the first command line argument.
+Alternativly you can use DiaryStorage as a command line argument, the ability to do so is just commented out in main.cpp. Find the five blue lines and un-comment them. Then comment out whats inbetween the blue lines (Just three lines, all marked "Whats Inbetween"). Then, it should run with DiaryStorage.txt as the first command line argument.
 
 Also, if you forget the password after initially setting it up, it can always be reset by deleting the contents offirst line of DiaryStorage, making sure to leave the empty line there.; This is where the password is stored, and the Set Password function is called whenever the first line of Storage is empty. 
 
