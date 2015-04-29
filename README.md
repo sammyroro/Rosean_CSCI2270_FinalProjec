@@ -26,9 +26,14 @@ And then, if entered correctly, will lead to this menu
 
 How To Run:
 
-There are four files actually used by the program. FinalProject.cpp (The Main), Diary.cpp and Diary.h (The Graph/Stucts/Functions), and DiaryStorage.txt (The home of the diary data).
+Go to the repository in terminal, enter make. Then enter ./main. That should be all, though if that doesn't work Alternate methods are below.
 
-To use, just create an empty project using Codeblocks, and add the FinalProject.cpp, Diary.cpp, and Diary.h files in. Then put the DiaryStorage on the Desktop and you're set, since DiaryStorage is defaulty set up to call it as an adress on the desktop. 
+
+Alternate Methods:
+
+There are four files actually used by the program. main.cpp (The Main), Diary.cpp and Diary.h (The Graph/Stucts/Functions), and DiaryStorage.txt (The home of the diary data).
+
+To use, just create an empty project using Codeblocks, and add the main.cpp, Diary.cpp, and Diary.h files in. Then put the DiaryStorage on the Desktop and you're set, since DiaryStorage is defaulty set up to call it as an adress on the desktop. 
 
 Alternativly you can use DiaryStorage as a command line argument, the ability to do so is just commented out in FinalProject.cpp. Find the five blue lines and un-comment them. Then comment out whats inbetween the blue lines (Just three lines, all marked "Whats Inbetween"). Then, it should run with DiaryStorage.txt as the first command line argument.
 
