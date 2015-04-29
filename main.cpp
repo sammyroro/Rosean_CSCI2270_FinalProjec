@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
     //string filename = argv[1];
     //diary.filename = filename;
 
-	in.open("/home/user/Desktop/DiaryStorage.txt"); // Whats Inbetween
-	diary.filename = "/home/user/Desktop/DiaryStorage.txt"; // Whats Inbetween
+	in.open("DiaryStorage.txt"); // Whats Inbetween
+	diary.filename = "DiaryStorage.txt"; // Whats Inbetween
 
 	//in.open(filename);
 
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
                 in.close();
                 ofstream out;
-                out.open("/home/user/Desktop/DiaryStorage.txt");
+                out.open("DiaryStorage.txt");
                 string UserInput;
                 cout<<"=====Set Your Password====="<<endl;
                 cin>>UserInput;
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
     ifstream in2;
     //string filename = argv[1];
 
-	in2.open("/home/user/Desktop/DiaryStorage.txt"); // Whats Inbetween
+	in2.open("DiaryStorage.txt"); // Whats Inbetween
 
 	//in2.open(filename);
 
