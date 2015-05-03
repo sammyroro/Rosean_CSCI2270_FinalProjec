@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 
     int x = 0;
-    Diary diary = Diary();
+    Diary diary;
     ifstream in;
     //string filename = argv[1];
     //diary.filename = filename;
@@ -124,6 +124,7 @@ int main(int argc, char *argv[])
         cout<<"3. Review Entries"<<endl;
         cout<<"4. Print All Words"<<endl;
         cout<<"5. Quit"<<endl;
+        cout<<"6. Reset Diary"<<endl;
         string input;
         cin>>input;
         int userInput = atoi(input.c_str());
@@ -161,6 +162,11 @@ int main(int argc, char *argv[])
             cout<<"Goodbye!"<<endl;
             diary.printOut();
 
+        }
+        if(userInput == 6)
+        {
+            diary.resetDiary();
+            going=false;
         }
     }
 

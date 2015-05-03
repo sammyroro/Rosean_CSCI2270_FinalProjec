@@ -15,6 +15,7 @@ Diary::Diary()
     startWord = NULL;
 
 }
+
 void Diary::insertEntry(std::string in_title, std::string date)
 {
     entry *dateplace = addDate(date);
@@ -368,6 +369,7 @@ void Diary::searchWords(std::string word1)
 
 
 }
+
 void Diary::printOut()
 {
 
@@ -402,5 +404,15 @@ void Diary::printOut()
         finder = finder->next;
 
     }
+    out.close();
+}
+
+void Diary::resetDiary(){
+
+    std::ofstream out;
+    out.open(filename);
+
+    out<<"\n";
+
     out.close();
 }
