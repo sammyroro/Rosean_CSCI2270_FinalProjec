@@ -54,6 +54,7 @@ class Diary
         void printWord(word *word);
         void searchWords(std::string word2);
         void printOut();
+        void resetDiary();
 
         entry *start;
         entry *finish;
